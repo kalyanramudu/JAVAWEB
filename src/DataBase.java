@@ -229,6 +229,7 @@ public class DataBase {
 			while(rs.next()) {
 				arrayString = new String[columnSize];
 				for(i = 1; i < columnSize + 1; i++) {
+					
 					arrayString[i - 1] = rs.getString(i);
 				}
 				arrayList.add(arrayString);
